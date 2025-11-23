@@ -1,2 +1,2 @@
 # spectral-shots
-portfolio site for photography business
+portfolio site for a photography business
