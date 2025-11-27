@@ -9,14 +9,119 @@
 <header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html">spectral shots</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact us</a></li>
         </ul>
     </nav>
 </header>
 <body>
-    <h1>Welcome</h1>
+    <h1>Welcome!</h1>
+    <div class="row">
+        <div class="column">
+            <img src="images/space-needle.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="images/mountain.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="images/couple.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="images/kayaks.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="images/manic-days.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="images/seattle-skyline.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="images/trailer.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="/images/space-needle.jpg" alt="the Space Needle" class="slide-img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="/images/mountain.jpg" alt="bird flying in front of a mountain with a lake in the foreground" class="slide-img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="images/couple.jpg" alt="two people sitting together on the dock" class="slide-img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="/images/kayaks.jpg" alt="row of kayaks on the shore" class="slide-img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="images/manic-days.jpg" alt="collection of stickers and trinkets for a memorial" class="slide-img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="images/seattle-skyline.jpg" alt="skyline of Seattle" class="slide-img">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="images/trailer.jpg" alt="trailer and boat parked in front of a house" class="slide-img">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/space-needle.jpg" onclick="currentSlide(1)" alt="Space Needle">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/mountain.jpg" onclick="currentSlide(2)" alt="mountain">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/couple.jpg" onclick="currentSlide(3)" alt="couple sitting on a dock">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/kayaks.jpg" onclick="currentSlide(4)" alt="kayaks sitting on the shore">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/manic-days.jpg" onclick="currentSlide(5)" alt="manic days sticker and other trinkets">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/seattle-skyline.jpg" onclick="currentSlide(6)" alt="Seattle skyline">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/trailer.jpg" onclick="currentSlide(7)" alt="trailer and boat">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 <footer>
 
