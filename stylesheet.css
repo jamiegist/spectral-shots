@@ -6,6 +6,7 @@
 nav {
     background-color: black;
     padding: 1rem;
+    position: sticky;
 }
 
 ul {
@@ -24,10 +25,6 @@ li a {
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1rem;
-}
-
-body {
-    height: 100vh;
 }
 
 .container {
@@ -116,12 +113,4 @@ body {
 .active,
 .demo:hover {
   opacity: 1;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
 }
