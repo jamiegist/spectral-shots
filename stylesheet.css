@@ -47,7 +47,12 @@ body {
 
 .card-list .card-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: 18 / 12;
+  object-fit: contain;
+}
 
+.card-caption {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
 }
