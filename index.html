@@ -5,150 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spectral Shots Photography</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <header>
     <nav>
         <ul>
-            <li><a href="index.html">spectral shots</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact us</a></li>
+            <li class="navbar-item"><a href="index.html">spectral shots</a></li>
+            <li class="navbar-item"><a href="about.html">about</a></li>
+            <li class="navbar-item"><a href="contact.html">contact us</a></li>
         </ul>
     </nav>
 </header>
 <body>
     <h1>Portfolio</h1>
-    <div class="container">
-        <div class="mySlides">
-            <img src="images/space-needle.jpg">
-        </div>
+    <div class="container swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <img src="images/space-needle.jpg" alt="Space Needle" class="card-image">
+                    <p>The Space Needle</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/mountain.jpg" alt="mountain" class="card-image">
+                    <p>Mountain</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/couple.jpg" alt="couple sitting on dock" class="card-image">
+                    <p>Couple sitting together on the dock</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/kayaks.jpg" alt="kayaks" class="card-image">
+                    <p>Kayaks on the shore</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/seattle-skyline.jpg" alt="Seattle skyline" class="card-image">
+                    <p>Seattle skyline</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/nyc-skyline.jpg" alt="NYC skyline" class="card-image">
+                    <p>New York City skyline</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/coney-island.jpg" alt="Coney Island boardwalk" class="card-image">
+                    <p>Coney Island boardwalk</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/manhattan-bridge.jpg" alt="Manhattan Bridge" class="card-image">
+                    <p>Manhattan Bridge</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/tube-station.jpg" alt="London Underground station" class="card-image">
+                    <p>London tube station</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/canals.jpg" alt="Canal boats" class="card-image">
+                    <p>Canal boats in London</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/tower-bridge.jpg" alt="Tower Bridge" class="card-image">
+                    <p>Tower Bridge, London</p>
+                </li>
+                <li class="card-item swiper-slide">
+                    <img src="images/millenium-bridge.jpg" alt="Millenium Bridge" class="card-image">
+                    <p>Millenium Bridge, London</p>
+                </li>
+            </ul>
 
-        <div class="mySlides">
-            <img src="images/mountain.jpg">
-        </div>
+            <div class="swiper-pagination"></div>
 
-        <div class="mySlides">
-            <img src="images/couple.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/kayaks.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/manic-days.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/seattle-skyline.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/trailer.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/coney-island.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/manhattan-bridge.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/nyc-skyline.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/abandoned-building.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/tube-station.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/canals.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/tower-bridge.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/millenium-bridge.jpg">
-        </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
-    <div class="row">
-        <div class="column">
-            <img class="demo cursor" src="images/space-needle.jpg" onclick="currentSlide(1)" alt="Space Needle">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/mountain.jpg" onclick="currentSlide(2)" alt="Mountain">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/couple.jpg" onclick="currentSlide(3)" alt="Couple sitting on a dock">
-        </div>
-            
-        <div class="column">
-            <img class="demo cursor" src="images/kayaks.jpg" onclick="currentSlide(4)" alt="Kayaks on the shore">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/manic-days.jpg" onclick="currentSlide(5)" alt="Kurt Cobain memorial bench">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/seattle-skyline.jpg" onclick="currentSlide(6)" alt="Seattle skyline">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/trailer.jpg" onclick="currentSlide(7)" alt="Trailer and a boat">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/coney-island.jpg" onclick="currentSlide(8)" alt="Coney Island, NYC">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/manhattan-bridge.jpg" onclick="currentSlide(9)" alt="Manhattan Bridge">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/nyc-skyline.jpg" onclick="currentSlide(10)" alt="NYC skyline">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/abandoned-building.jpg" onclick="currentSlide(11)" alt="Abandoned building">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/tube-station.jpg" onclick="currentSlide(12)" alt="Tube station (London)">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/canals.jpg" onclick="currentSlide(13)" alt="Canals in London">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/tower-bridge.jpg" onclick="currentSlide(14)" alt="Tower Bridge, London">
-        </div>
-
-        <div class="column">
-            <img class="demo cursor" src="images/millenium-bridge.jpg" onclick="currentSlide(15)" alt="Millenium Bridge, London">
-        </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
         </div>
-</div>
+    </div>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
