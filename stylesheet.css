@@ -5,19 +5,22 @@
 }
 
 nav {
-  display: flex;
-  padding: 3rem;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
+  padding: 1.5rem;
   width: 100%;
+  background-color: black;
 }
 
 nav ul {
-  width: 100%;
   display: flex;
-  background-color: black;
-  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
 }
 
 .navbar-item a {
@@ -26,33 +29,43 @@ nav ul {
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 2rem;
+  font-size: 1.75rem;
 }
 
-body {
+.portfolio-container {
   display: flex;
+}
+
+img {
+  width: 25%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #EDF7FF;
 }
 
-.card-list .card-item {
-  user-select: none;
-  display: block;
-  background: #fff;
-  padding: 18px;
-  border-radius: 12px;
-  list-style: none;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
-.card-list .card-image {
-  width: 100%;
-  aspect-ratio: 18 / 12;
-  object-fit: contain;
+.fa:hover {
+  opacity: 0.7;
 }
 
-.card-caption {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.25rem;
-  padding-top: 0.5rem;
+.fa-instagram {
+  background: black;
+  color: white;
 }
+
+.fa-tumblr {
+  background: navy;
+  color: white;
+}
+
