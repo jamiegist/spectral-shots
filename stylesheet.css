@@ -46,6 +46,12 @@ img {
   align-items: center;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
