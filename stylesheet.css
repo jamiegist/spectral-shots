@@ -40,6 +40,29 @@ img {
   width: 25%;
 }
 
+.main-text {
+  display: flex;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.prints {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  background: black;
+  padding: 0.25rem;
+  width: 10%;
+}
+
+.main-img-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -73,20 +96,32 @@ img {
 }
 
 .fa-tumblr {
-  background: navy;
+  background: black;
   color: white;
   padding: 1.5rem;
 }
 
-.prints {
+.portfolio-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.portrait-photography {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  color: white;
-  background: black;
-  padding: 0.25rem;
-  width: 10%;
+  justify-content: space-around;
+}
+
+.street-photography {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.landscape-photography {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }
