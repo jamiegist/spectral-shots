@@ -10,7 +10,7 @@ nav {
   background-color: black;
   overflow: hidden;
 
-  @media only screen and (width < 600) {
+  @media only screen and (min-width: 600) {
   font-size: 1rem;
 }
 }
@@ -60,16 +60,13 @@ img {
   color: white;
   background: black;
   padding: 0.25rem;
-  width: 10%;
-
-  @media (width < 600) {
-    width: 20%;
-  }
+  width: 40%;
 }
 
 .main-img-container {
   display: flex;
   justify-content: space-around;
+  margin-top: 0.5rem;
 }
 
 .contact-container {
