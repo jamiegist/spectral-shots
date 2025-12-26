@@ -8,6 +8,11 @@ nav {
   padding: 1.5rem;
   width: 100%;
   background-color: black;
+  overflow: hidden;
+
+  @media only screen and (width < 600) {
+  font-size: 1rem;
+}
 }
 
 nav ul {
@@ -56,6 +61,10 @@ img {
   background: black;
   padding: 0.25rem;
   width: 10%;
+
+  @media (width < 600) {
+    width: 20%;
+  }
 }
 
 .main-img-container {
