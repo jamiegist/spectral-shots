@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spectral Shots Photography | About</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
     <nav>
-        <ul>
-            <li class="navbar-item"><a href="index.html">spectral shots</a></li>
-            <li class="navbar-item"><a href="portfolio.html">portfolio</a></li>
-            <li class="navbar-item"><a href="contact.html">contact</a></li>
-        </ul>
+        <div class="topnav">
+            <a href="index.html" class="active">spectral shots</a>
+            <div id="myLinks">
+                <a href="portfolio.html">portfolio</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </nav>
 </header>
 <body>
@@ -35,5 +41,6 @@
         <img src="images/la-lifeguard.jpg" />
     </div>
     
+<script src="script.js" ></script>
 </body>
 </html>

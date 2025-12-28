@@ -2,4 +2,4 @@
 portfolio site for a photography business
 
 features to implement:
-- change navbar to hamburger menu or dropdown for mobile view.
+- Security for form submission and look into SSL for domain security.
