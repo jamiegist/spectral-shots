@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
-    <nav>
-        <div class="topnav">
-            <a href="index.html" class="active">spectral shots</a>
-            <div id="myLinks">
-                <a href="portfolio.html">portfolio</a>
-                <a href="contact.html">contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <nav aria-label="Main Navigation">
+    <div class="topnav">
+    <a href="index.html" class="brand-logo active">spectral shots</a>
+   
+        <div id="myLinks" role="menu">
+            <a href="portfolio.html" role="menuitem">portfolio</a>
+            <a href="contact.html" role="menuitem">contact</a>
         </div>
-    </nav>
+
+        <button class="icon" onclick="myFunction()" aria-label="Open Menu" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+</nav>
 </header>
 <body>
     <h1>Welcome</h1>
@@ -30,8 +32,12 @@
       <a target="_blank" class="prints" href="https://spectral-shots.framer.art">Shop Prints</a>
 
     <div class="main-img-container">
-      <img class="main-img" src="/images/manhattan-bridge.jpg" />
-      <img class="main-img" src="images/space-needle.jpg" />
+        <a href="portfolio.html" class="img-link">
+            <img class="main-img" src="images/manhattan-bridge.jpg" alt="Manhattan Bridge Black and White" />
+        </a>
+        <a href="portfolio.html" class="img-link">
+            <img class="main-img" src="images/space-needle.jpg" alt="Space Needle Black and White" />
+        </a>
     </div>
     
     <script src="script.js" ></script>

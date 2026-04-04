@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
-    <nav>
-        <div class="topnav">
-            <a href="index.html" class="active">spectral shots</a>
-            <div id="myLinks">
-                <a href="portfolio.html">portfolio</a>
-                <a href="contact.html">contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <nav aria-label="Main Navigation">
+    <div class="topnav">
+        <a href="index.html" class="brand-logo">spectral shots</a>
+
+        <div id="myLinks" role="menu">
+            <a href="portfolio.html" role="menuitem">portfolio</a>
+            <a href="contact.html" role="menuitem">contact</a>
         </div>
-    </nav>
+
+        <button class="icon" onclick="myFunction()" aria-label="Open Menu" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+</nav>
 </header>
 <body>
     <h2 class="portfolio-heading">People</h2>

@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spectral Shots Photography | Contact Us</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "BbngGDiX3_87f8-TO",
+            });
+        })();
+    </script>
+<script type="text/javascript">
+        window.onload = function() {
+            const btn = document.querySelector('input[type="submit"]');
+            
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Change button text to show it's working
+                btn.value = 'Sending...';
+
+                emailjs.sendForm('service_0zfq8nd', 'template_f584o3d', this)
+                    .then(() => {
+                        alert('Message Sent Successfully!');
+                        btn.value = 'Send';
+                        this.reset(); // Clears the form after success
+                    }, (error) => {
+                        alert('Failed to send message. Please try again.');
+                        console.log('FAILED...', error);
+                        btn.value = 'Send';
+                    });
+            });
+        }
+    </script>
 </head>
 <header>
-    <nav>
-        <div class="topnav">
-            <a href="index.html" class="active">spectral shots</a>
-            <div id="myLinks">
-                <a href="portfolio.html">portfolio</a>
-                <a href="contact.html">contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <nav aria-label="Main Navigation">
+    <div class="topnav">
+        <a href="index.html" class="brand-logo">spectral shots</a>
+
+        <div id="myLinks" role="menu">
+            <a href="portfolio.html" role="menuitem">portfolio</a>
+            <a href="contact.html" role="menuitem">contact</a>
         </div>
-    </nav>
+
+        <button class="icon" onclick="myFunction()" aria-label="Open Menu" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+</nav>
 </header>
 <body>
-      <div class="social-links">
-        <a target="_blank" class="fa fa-instagram" href="https://instagram.com/spectral.shots"></a>
-        <a target="_blank" class="fa fa-tumblr" href="https://tumblr.com/spectral-shots"></a>
-    </div>
-    <div class="contact-container">
-        <h3>Send An Email</h3>
-        <p>For business inquiries please send a message using the form below.</p>
-        <form action="mailto:spectralshotsphoto@gmail.com" method="post" enctype="text/plain">
-            Name:<br>
-            <input type="text" name="name"><br>
-            E-mail:<br>
-            <input type="text" name="mail"><br>
-            Comment:<br>
-            <input type="text" name="comment" size="50"><br><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
-        </form>
-    </div>
-
-    <script src="script.js" ></script>
+    <form id="contact-form">
+        <h2>Contact Us</h2>
+        <input type="hidden" name="time" value="Mar 10 2025 08:46">
+        <label>Name</label>
+        <input type="text" name="name" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Subject</label>
+        <input type="text" name="title" required>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Send">
+    </form>
 </body>
 </html>
