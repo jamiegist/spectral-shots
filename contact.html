@@ -38,6 +38,7 @@
         }
     </script>
 </head>
+<body>
 <header>
     <nav aria-label="Main Navigation">
     <div class="topnav">
@@ -45,7 +46,7 @@
 
         <div id="myLinks" role="menu">
             <a href="portfolio.html" role="menuitem">portfolio</a>
-            <a href="contact.html" role="menuitem">contact</a>
+            <a href="contact.html" class="active" role="menuitem">contact</a>
         </div>
 
         <button class="icon" onclick="myFunction()" aria-label="Open Menu" aria-expanded="false">
@@ -54,19 +55,19 @@
     </div>
 </nav>
 </header>
-<body>
-    <form id="contact-form">
-        <h2>Contact Us</h2>
-        <input type="hidden" name="time" value="Mar 10 2025 08:46">
-        <label>Name</label>
-        <input type="text" name="name" required>
-        <label>Email</label>
-        <input type="email" name="email" required>
-        <label>Subject</label>
-        <input type="text" name="title" required>
-        <label>Message</label>
-        <textarea name="message" required></textarea>
-        <input type="submit" value="Send">
-    </form>
+    <div class="contact-wrapper">
+        <form id="contact-form">
+            <h2>Contact Us</h2>
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Subject</label>
+            <input type="text" name="title" required>
+            <label>Message</label>
+            <textarea name="message" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
 </body>
 </html>
